@@ -172,5 +172,31 @@ if = 5      # ❌ Error — 'if' is a keyword
 import keyword
 print(keyword.kwlist)
 ```
+### Python Programming Practice Report (print, variable)
+I.Print Statement
+
+1.Print your name, age, and favorite hobby in a single line.
+
+2.Display a welcome message: Welcome to Python Learning, <your name>!
+
+3.Print a short poem or quote using multiple `print`() lines.
+
+4.Print a shopping list with each item on a new line.
+
+5.Print your favorite movie name in uppercase letters.
+
+II.Variables
+
+1.Store your name, age, and city in variables and print them.
+
+2.Store the cost of 3 products and calculate the total bill.
+
+3.Create two variables a and b, swap their values, and print the result.
+
+4.Store your birth year and calculate your age.
+
+5.Store your school name in a variable and print:
+`"I study at <school_name>"`
+
 
 
