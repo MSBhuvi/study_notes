@@ -197,6 +197,6 @@ II.Variables
 
 5.Store your school name in a variable and print:
 `"I study at <school_name>"`
-
+---
 
 
