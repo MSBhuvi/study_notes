@@ -196,6 +196,120 @@ II.Variables
 4.Store your birth year and calculate your age.
 
 5.Store your school name in a variable and print:
-`"I study at <school_name>"`
+"I study at <school_name>"
+
 ---
+## 6.String_Handling
+
+## 🧩 **Basic**
+
+| Method   | Description        | Example            |
+| :------- | :----------------- | :----------------- |
+| `len(s)` | Returns length     | `len("abc") → 3`   |
+| `str()`  | Converts to string | `str(123) → "123"` |
+
+---
+
+## 🔠 **Case Conversion**
+
+| Method           | Description          | Example                            |
+| :--------------- | :------------------- | :--------------------------------- |
+| `s.lower()`      | All lowercase        | `"Hello".lower() → "hello"`        |
+| `s.upper()`      | All uppercase        | `"Hello".upper() → "HELLO"`        |
+| `s.title()`      | Title case           | `"hi there".title() → "Hi There"`  |
+| `s.capitalize()` | 1st letter uppercase | `"python".capitalize() → "Python"` |
+| `s.swapcase()`   | Swap case            | `"PyThOn".swapcase() → "pYtHoN"`   |
+
+---
+
+## ✂️ **Trim / Padding**
+
+| Method                      | Description             | Example                          |
+| :-------------------------- | :---------------------- | :------------------------------- |
+| `s.strip()`                 | Remove both side spaces | `"  hi  ".strip() → "hi"`        |
+| `s.lstrip()`                | Remove left spaces      | `"  hi".lstrip() → "hi"`         |
+| `s.rstrip()`                | Remove right spaces     | `"hi  ".rstrip() → "hi"`         |
+| `s.center(w, c)`            | Center with fill        | `"hi".center(6, "*") → "**hi**"` |
+| `s.ljust(w)` / `s.rjust(w)` | Left/Right align        | `"hi".rjust(5) → "   hi"`        |
+| `s.zfill(w)`                | Pad with zeros          | `"42".zfill(5) → "00042"`        |
+
+---
+
+## 🔍 **Search / Count**
+
+| Method            | Description                      | Example                              |
+| :---------------- | :------------------------------- | :----------------------------------- |
+| `s.find(sub)`     | Index of sub or -1               | `"banana".find("na") → 2`            |
+| `s.rfind(sub)`    | Last index                       | `"banana".rfind("na") → 4`           |
+| `s.index(sub)`    | Like find but error if not found | `"abc".index("b") → 1`               |
+| `s.count(sub)`    | Count occurrences                | `"aaa".count("a") → 3`               |
+| `s.startswith(x)` | Check prefix                     | `"hello".startswith("he") → True`    |
+| `s.endswith(x)`   | Check suffix                     | `"data.csv".endswith(".csv") → True` |
+
+---
+
+## 🔗 **Split / Join**
+
+| Method             | Description          | Example                              |
+| :----------------- | :------------------- | :----------------------------------- |
+| `s.split(sep)`     | Split to list        | `"a,b,c".split(",") → ['a','b','c']` |
+| `s.rsplit(sep)`    | Split from right     | `"a,b,c".rsplit(",",1)`              |
+| `s.splitlines()`   | Split by newlines    | `"a\nb".splitlines() → ['a','b']`    |
+| `'sep'.join(list)` | Join list to string  | `",".join(['a','b']) → "a,b"`        |
+| `s.partition(x)`   | Split once (3 parts) | `"key=val".partition("=")`           |
+
+---
+
+## 🔁 **Replace / Map**
+
+| Method                 | Description       | Example                                |
+| :--------------------- | :---------------- | :------------------------------------- |
+| `s.replace(a,b)`       | Replace text      | `"hi hi".replace("hi","yo") → "yo yo"` |
+| `s.maketrans(from,to)` | Build map         | `t=str.maketrans("ae","12")`           |
+| `s.translate(map)`     | Apply translation | `"apple".translate(t) → "1ppl2"`       |
+
+---
+
+## ✅ **Check Content**
+
+| Method             | Description       | Example                          |
+| :----------------- | :---------------- | :------------------------------- |
+| `s.isalpha()`      | Letters only      | `"abc".isalpha() → True`         |
+| `s.isdigit()`      | Digits only       | `"123".isdigit() → True`         |
+| `s.isalnum()`      | Letters or digits | `"abc1".isalnum() → True`        |
+| `s.islower()`      | All lowercase     | `"abc".islower() → True`         |
+| `s.isupper()`      | All uppercase     | `"ABC".isupper() → True`         |
+| `s.isspace()`      | Whitespace only   | `"  ".isspace() → True`          |
+| `s.istitle()`      | Title case        | `"Hello World".istitle() → True` |
+| `s.isidentifier()` | Valid Python name | `"var1".isidentifier() → True`   |
+
+---
+
+## 🧮 **Formatting**
+
+| Method               | Description              | Example                                    |
+| :------------------- | :----------------------- | :----------------------------------------- |
+| `s.format()`         | Replace `{}` with values | `"Hi {}".format("Bhuvi")`                  |
+| `f"..."`             | f-string formatting      | `f"Hi {name}"`                             |
+| `s.format_map(dict)` | Format using dict        | `"Hi {name}".format_map({"name":"Bhuvi"})` |
+
+---
+
+## ⚙️ **Encoding**
+
+| Method       | Description | Example                 |
+| :----------- | :---------- | :---------------------- |
+| `s.encode()` | To bytes    | `"hi".encode() → b'hi'` |
+| `b.decode()` | To string   | `b'hi'.decode() → 'hi'` |
+
+---
+
+### ⚡ Quick tip:
+
+* Strings are **immutable** → all methods return a **new string**.
+* For multiple replacements, prefer `translate()` over multiple `replace()` calls.
+* For performance, use `' '.join(list)` instead of repeated `+` concatenations.
+
+---
+
 
