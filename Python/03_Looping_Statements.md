@@ -115,7 +115,8 @@ for i in word:
 print(count)
 
 ```
-## 2.What is a while loop?
+## while loop
+### 2.What is a while loop?
 A while loop is a **control flow statement** in Python that repeatedly executes a block of code as long as a **given condition is true**.
 
 “Keep doing this until the condition becomes false.”
@@ -197,6 +198,47 @@ for i in range(5):
     else:
         print(i)
 ```
+
+### Summary Table
+
+| Keyword    | Meaning                  | Effect on Loop          |
+| ---------- | ------------------------ | ----------------------- |
+| `break`    | Exit the loop completely | Stops the loop          |
+| `continue` | Skip current iteration   | Goes to next iteration  |
+| `pass`     | Do nothing (placeholder) | Loop continues normally |
+
+## `while` loop Interview Questions
+
+#### Q1-Write a program using a while loop to print numbers from 1 to 10.
+```
+num=1
+while num<=10:
+    print(num)
+    num+=1
+```
+
+#### Q2-Use a while loop to find the sum of the first N natural numbers (for example, N = 5 → 1+2+3+4+5).
+
+```
+n=1
+result=0
+while n<=5:
+    result=result+n
+    n=n+1
+
+print(result)
+```
+
+#### Q3-Write a program to count how many digits are in a number (e.g. 9876 → 4 digits).
+
+
+
+
+
+
+
+
+
 
 
 
