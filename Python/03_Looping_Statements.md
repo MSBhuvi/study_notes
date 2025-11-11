@@ -115,16 +115,88 @@ for i in word:
 print(count)
 
 ```
+## 2.What is a while loop?
+A while loop is a **control flow statement** in Python that repeatedly executes a block of code as long as a **given condition is true**.
+
+“Keep doing this until the condition becomes false.”
+
+### Basic Syntax
+<p align="center">
+    <img width="177" height="58" alt="image" src="https://github.com/user-attachments/assets/a1e43591-858b-4221-a3e0-6b6a2e94e318" />
+</p>
+
+**Example-1**
+Counting Numbers
+```
+count = 1
+while count <= 5:
+    print(count)
+    count = count + 1
+```
+### **Important: Avoid Infinite Loops!**
+If you **forget to update** the condition, the loop may **never stop**.
+<p align="center">
+    <img width="314" height="114" alt="image" src="https://github.com/user-attachments/assets/8bbd2235-2fbb-4b9e-9213-6122daa7e0c6" />
+</p>
+
+
+**example-2**
+While Loop with User Input
+```
+password = ""
+while password != "bhuvi123":
+    password = input("Enter password: ")
+
+print("Access granted!")
+```
+## Flow Control Statements
+continue
+
+break
+
+pass
+
+### continue
+
+Skips the remaining code for the current iteration and goes to the next one.
+
+**Example**
 
 ```
+i = 0
+while i < 5:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+```
 
+### Break
 
+Ends (breaks) the loop immediately, even if the loop condition is still true.
 
+**Example**
 
+```
+i = 1
+while i <= 10:
+    if i == 5:
+        break
+    print(i)
+    i += 1
+```
 
+### Pass
+Does nothing — it’s used when a statement is syntactically required, but you don’t want to run any code there.
 
-
-
+**Example**
+```
+for i in range(5):
+    if i == 3:
+        pass  # do nothing
+    else:
+        print(i)
+```
 
 
 
