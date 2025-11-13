@@ -24,13 +24,17 @@ As the size increases, the price increases — linear relationship.
   <img width="614" height="329" alt="image" src="https://github.com/user-attachments/assets/23df0006-a216-4a4e-8369-14f18882dfd3" />
 </p>
 
+### Why Linear Regression is Important?
 
+Simplicity and Interpretability
 
+Predictive Ability
 
+Basis for Other Models
 
+Efficiency
 
-
-
+Widely Used
 
 
 
