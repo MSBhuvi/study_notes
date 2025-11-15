@@ -179,8 +179,114 @@ pop(0) or insert(0, value) is slow because entire list shifts.
 
 ----
 
+## **Tuple**
 
+A tuple in Python is an immutable, ordered data structure used to store multiple items in a single variable.
+Unlike lists, tuples cannot be modified after creation, making them ideal for fixed, secure, and read-only data.
 
+Python tuples:
+
+Cannot be changed after creation (immutable)
+
+Can store mixed data types
+
+Maintain order
+
+Are stored more efficiently than lists
+
+Are commonly used for:
+
+Fixed collections of values
+
+Returning multiple values from functions
+
+Using as dictionary keys (because they are hashable)
+
+Tuples are ideal when you want to protect data from modification and ensure stable, predictable structure.
+
+### Key Characteristics of Tuples
+
+### ✔ Ordered
+
+Tuples preserve the order of elements.
+
+```
+t = (10, 20, 30)
+# index: 0   1   2
+```
+
+### ✔ Immutable (cannot be changed)
+You cannot modify, add, or delete elements once created.
+
+```
+t = (1, 2, 3)
+# t[1] = 99  ❌ Not allowed – TypeError
+```
+
+### ✔ Allows Duplicate Values
+Tuples can contain repeated values.
+
+```
+t = (1, 2, 2, 3)
+```
+
+### ✔ Supports Heterogeneous Data
+Tuples can store different data types.
+
+```
+t = (10, "hello", 3.14, True)
+```
+
+### ✔ Indexing & Slicing Supported
+You can access individual items or sub-tuples.
+
+```
+t = (10, 20, 30, 40, 50)
+print(t[2])    # 30
+print(t[1:4])  # (20, 30, 40)
+```
+
+#### ✔ Hashable (if all elements are hashable)
+Tuples can be used as keys in dictionaries.
+
+```
+coords = {(10, 20): "Location A"}
+```
+
+### Examples of Tuples Usage
+#### **Creating Tuples**
+
+```
+t1 = (1, 2, 3)
+t2 = ("apple", 10, 3.14)
+t3 = ()            # empty tuple
+t4 = (5,)          # single-element tuple (comma required)
+```
+
+#### **Accessing Elements**
+
+```
+t = (10, 20, 30)
+print(t[0])   # 10
+print(t[-1])  # 30
+```
+
+#### **Tuple Unpaking**
+Useful for returning multiple values.
+
+```
+point = (5, 10)
+x, y = point
+```
+
+#### **Iteration**
+
+```
+for item in (1, 2, 3):
+    print(item)
+```
+
+#### **Membership Test**
 
 
 
