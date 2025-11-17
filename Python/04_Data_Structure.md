@@ -76,7 +76,7 @@ empty = []
 
 ```
 numbers.append(5)        # Add at end
-numbers.insert(1, 10)    # Insert at index 1
+numbers.insert(1, 10)    # Insert 10 at index 1
 numbers.extend([6, 7])   # Add multiple items
 ```
 
