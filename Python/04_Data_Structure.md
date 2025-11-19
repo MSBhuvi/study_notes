@@ -288,8 +288,100 @@ for item in (1, 2, 3):
 
 #### **Membership Test**
 
+```
+t = (1, 2, 3)
+print(2 in t)   # True
+```
 
+#### Concatenation & Repetition
 
+```
+a = (1, 2)
+b = (3, 4)
+print(a + b)     # (1,2,3,4)
+
+print(a * 3)     # (1,2,1,2,1,2)
+```
+
+#### Using Tuples as Dictionary Keys
+
+```
+location = {}
+location[(10.5, 20.7)] = "Home"
+```
+
+### **Advantages of Tuples**
+
+✅ 1. Faster than Lists
+
+Since they are immutable, Python can optimize memory and access speed.
+
+✅ 2. Immutable (Data Safety)
+
+Prevents accidental modification.
+
+Useful in:
+
+Multi-threaded programs
+
+Configuration values
+
+Constant datasets
+
+✅ 3. Hashable
+
+Can be used as keys in dictionaries and elements of sets.
+
+✅ 4. Lower Memory Usage
+
+Tuples consume less memory than lists.
+
+✅ 5. Ideal for Fixed Data
+
+Such as coordinates, RGB values, dates, database records, etc.
+
+### **Disadvantages of Tuples**
+
+❌ 1. Immutable
+
+You cannot:
+
+Add elements
+
+Remove elements
+
+Modify elements
+
+This limits flexibility.
+
+❌ 2. Not Suitable for Dynamic Data
+
+If the data changes frequently, use a list instead.
+
+❌ 3. Fewer Built-in Methods
+
+Tuples only support:
+
+count()
+
+index()
+
+Unlike lists (append, remove, insert, etc.).
+
+❌ 4. Harder to Modify Complex Data Structures
+
+If you need to update values often, tuple is not ideal.
+
+### Summary Table
+
+| Feature           | Details                                     |
+| ----------------- | ------------------------------------------- |
+| Ordered           | Yes                                         |
+| Mutable           | ❌ No                                        |
+| Duplicate Allowed | Yes                                         |
+| Heterogeneous     | Yes                                         |
+| Implementation    | Immutable sequence                          |
+| Best Use Cases    | Fixed data, keys in dict, efficient reading |
 
 
 
