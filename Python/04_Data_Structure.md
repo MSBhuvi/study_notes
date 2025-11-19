@@ -11,7 +11,7 @@ sets
 
 Dictionaries
 
-## **List**:
+## **List []**:
 
 A **list** in Python is a dynamic, mutable, ordered data structure used to store multiple items in a single variable.
 It is one of the most commonly used data structures in Python because it is flexible, easy to use, and supports a wide variety of operations.
@@ -179,7 +179,7 @@ pop(0) or insert(0, value) is slow because entire list shifts.
 
 ----
 
-## **Tuple**
+## **Tuple ()**
 
 A tuple in Python is an immutable, ordered data structure used to store multiple items in a single variable.
 Unlike lists, tuples cannot be modified after creation, making them ideal for fixed, secure, and read-only data.
@@ -382,6 +382,196 @@ If you need to update values often, tuple is not ideal.
 | Heterogeneous     | Yes                                         |
 | Implementation    | Immutable sequence                          |
 | Best Use Cases    | Fixed data, keys in dict, efficient reading |
+
+## **set {}**
+
+A set in Python is an unordered, mutable, and unique-element data structure used to store a collection of distinct items.
+
+Python sets:
+
+Store only unique values
+
+Are unordered
+
+Are mutable
+
+Provide O(1) average time complexity for add, remove, check operations
+
+Support powerful set operations: union, intersection, difference, symmetric difference
+
+Sets are ideal when you need fast membership testing, duplicate removal, or mathematical set operations.
+
+### Key Characteristics of Sets
+
+✔ Unordered
+
+Set elements do not maintain insertion order.
+You cannot rely on indexing.
+
+```
+s = {10, 20, 30}
+# No index positions
+```
+
+✔ Contains Only Unique Elements
+
+Duplicates are automatically removed.
+
+```
+s = {1, 2, 2, 3}
+print(s)   # {1, 2, 3}
+```
+
+✔ Mutable (can be changed)
+
+You can add or remove elements.
+
+```
+s = {1, 2, 3}
+s.add(4)
+s.remove(2)
+```
+
+✔ Only Hashable Elements Allowed
+
+You can store:
+
+int
+
+float
+
+string
+
+tuple
+
+But not:
+
+lists
+
+dicts
+
+sets
+
+```
+s = {1, "hello", (2, 3)}   # valid
+# s = {[1, 2], 3}         # ❌ TypeError
+```
+
+✔ No Indexing or Slicing
+
+This will give an error:
+
+```
+s = {1, 2, 3}
+# s[0] ❌ Not allowed
+```
+
+✔ Fast Membership Testing
+
+Checking membership is extremely fast (O(1)).
+
+```
+if 10 in {10, 20, 30}:
+    print("Exists")
+```
+
+### Examples of Set Usage
+
+**Creating Sets**
+
+```
+s1 = {1, 2, 3}
+s2 = set([4, 5, 6])
+s3 = set()        # empty set
+```
+
+**Adding Elements**
+
+```
+s = {1, 2}
+s.add(3)
+s.update([4, 5, 6])    # Add multiple items
+```
+
+**Removing Elements**
+
+```
+s = {1, 2, 3}
+s.remove(2)   # removes 2, errors if not found
+s.discard(5)  # no error if 5 not found
+s.pop()       # removes a random element
+s.clear()     # removes all elements
+```
+
+**Checking Membership**
+
+```
+s = {1, 2, 3}
+print(2 in s)   # True
+print(4 in s)   # False
+```
+
+### **Advantages of Sets**
+
+✅ 1. Fast Membership Testing
+
+Checking x in set is O(1) on average.
+
+✅ 2. No Duplicates
+
+Automatically removes duplicate values.
+
+✅ 3. Efficient Mathematical Operations
+
+Union, intersection, etc., are highly optimized.
+
+✅ 4. Good for Data Cleaning
+
+Easily remove duplicates from lists:
+
+```
+unique_list = list(set([1,2,2,3,3,4]))
+```
+
+✅ 5. Mutable but Elements Must Be Hashable
+
+Allows adding/removing items efficiently.
+
+### **Disadvantages of Sets**
+
+❌ 1. Unordered
+
+You cannot rely on element positions; indexing is not supported.
+
+❌ 2. Cannot Store Unhashable Items
+
+Lists, dicts, and sets cannot be stored.
+
+❌ 3. No Duplicate Allowed
+
+Sometimes you want duplicates (e.g., counting).
+
+❌ 4. Random Element Removal with pop()
+
+Not ideal for predictable removals.
+
+❌ 5. Not Suitable for Ordered Tasks
+
+If you need order → use list
+If you need sorted order → use sorted(), list, or OrderedSet (3rd-party)
+
+### Summary Table
+
+| Feature            | Details                                                  |
+| ------------------ | -------------------------------------------------------- |
+| Ordered            | ❌ No                                                     |
+| Mutable            | ✔ Yes                                                    |
+| Duplicates Allowed | ❌ No                                                     |
+| Heterogeneous      | ✔ Yes                                                    |
+| Implementation     | Hash Table                                               |
+| Best Use Cases     | Membership testing, removing duplicates, math operations |
+
+
 
 
 
