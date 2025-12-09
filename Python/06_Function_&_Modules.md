@@ -40,16 +40,45 @@ return → (optional) sends a value back to the caller.
 <img width="864" height="297" alt="image 3" src="https://github.com/user-attachments/assets/74ab6396-5cf7-41a0-845e-fdb3a136abc6" />
 </p>
 
+## Arguments
 
+Information can be passed into functions as arguments.
 
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
 
+### Example
 
+```
+def my_function(fname):
+  print(fname + " Refsnes")
 
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+```
 
+## Decorators
 
+Decorators let you add extra behavior to a function, without changing the function's code.
 
+A decorator is a function that takes another function as input and returns a new function.
 
+Define the decorator first, then apply it with @decorator_name above the function.
 
+### Example
+
+```
+def changecase(func):
+  def myinner():
+    return func().upper()
+  return myinner
+
+@changecase
+def myfunction():
+  return "Hello Sally"
+
+print(myfunction())
+```
 
 
 
