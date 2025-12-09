@@ -57,6 +57,26 @@ my_function("Tobias")
 my_function("Linus")
 ```
 
+## Function without parameters
+<p align="center">
+<img width="606" height="188" alt="Screenshot 2025-09-06 122849 1" src="https://github.com/user-attachments/assets/3633d303-f4fe-4d26-9505-6eb24429a5ce" />
+</p>
+
+ ## Function with parameters
+<p align="center">
+<img width="660" height="260" alt="Screenshot 2025-09-06 125039 1" src="https://github.com/user-attachments/assets/5950775d-17f8-42bc-bda1-03d500459840" />
+</p>
+
+## Function with return value
+<p align="center">
+<img width="834" height="383" alt="Screenshot 2025-09-06 130927 1" src="https://github.com/user-attachments/assets/f2513385-781b-4b53-97d8-4879524374f0" />
+</p>
+
+## Default parameter value
+<p align="center">
+<img width="678" height="326" alt="Screenshot 2025-09-06 131143 1" src="https://github.com/user-attachments/assets/df9c8618-93e4-4fd0-98ab-862503075652" />
+</p>
+
 ## Decorators
 
 Decorators let you add extra behavior to a function, without changing the function's code.
