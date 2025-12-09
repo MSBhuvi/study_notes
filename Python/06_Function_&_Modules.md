@@ -1,3 +1,59 @@
+# Function
+
+A function in Python is a block of reusable code that performs a specific task.
+
+Instead of writing the same code again and again, you can put it inside a function and call it whenever needed.
+
+# Use of Functions
+
+Code reusability (write once, use many times).
+
+Organized & clean code.
+
+Easy debugging.
+
+Avoid repetition.
+
+## Syntax
+
+<p align="center">
+<img width="1009" height="164" alt="Screenshot 2025-09-06 123321 1" src="https://github.com/user-attachments/assets/7e08980c-93ff-4986-90b6-bf32f14de3fb" />
+</p>
+
+where
+
+def → keyword to define a function.
+
+function_name → name of the function (should be meaningful).
+
+parameters → (optional) values passed into the function.
+
+return → (optional) sends a value back to the caller.
+
+## Example
+
+<p align="center">
+<img width="496" height="154" alt="Screenshot 2025-09-06 122849" src="https://github.com/user-attachments/assets/d3d691c4-43b5-49c2-9b38-08e294de5c20" />
+</p>
+
+<p align="center">
+<img width="864" height="297" alt="image 3" src="https://github.com/user-attachments/assets/74ab6396-5cf7-41a0-845e-fdb3a136abc6" />
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Lambda Function (Anonymous Function)
 
 A lambda function in Python is a small, anonymous (nameless) function defined using the lambda keyword.
