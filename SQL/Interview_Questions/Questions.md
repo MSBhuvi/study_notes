@@ -1,6 +1,4 @@
-# Interview Questions
-
-employees2 table
+# employees2 table
 
 | emp_id | name      | department | salary | join_date  |
 | ------ | --------- | ---------- | ------ | ---------- |
@@ -51,3 +49,29 @@ INSERT INTO employees2 (emp_id, name, department, salary, join_date) VALUES
 (114, 'Teja', 'IT', 65000, '2017-05-19'),
 (115, 'Vignesh', 'Finance', 47000, '2021-12-09');
 ```
+
+# Interview Questions
+
+1. Write a query to display all records from the employees table.
+
+```
+SELECT * FROM employees2;
+```
+
+2. Write a query to display only emp_id and name.
+
+4. Write a query to find all employees working in the IT department.
+5. Write a query to find employees whose salary is greater than 40,000.
+6. Write a query to sort employees by salary in descending order.
+7. Write a query to get the highest salary from the employees table.
+8. Write a query to count the number of employees in each department.
+9. Write a query to find employees who joined after 2021-01-01.
+10. Write a query to find the total salary paid to all employees.
+11. Write a query to update the salary of employee with emp_id 103 to 50000.
+12. Write a query to delete an employee who works in the Marketing department.
+13. Write a query to find the minimum salary in the IT department.
+14. Write a query to display employees whose name starts with 'S'.
+15. Write a query to find employees where salary is between 30,000 and 50,000.
+16. Write a query to group employees by department and show average salary.
+17. Write a query to display employees ordered by join_date (oldest first).
+18. Write a query to rename the column "name" to "employee_name" in output (using alias).
