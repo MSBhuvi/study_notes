@@ -6,6 +6,8 @@ algorithm used to predict a continuous numerical value based on input features.
 
 It finds the best-fitting straight line that represents the relationship between input (X) and output (Y).
 
+**Goal** -- Finds the best-fit straight line to model
+
 **Example:**
 Predicting house price based on size.
 
@@ -36,7 +38,61 @@ Efficiency
 
 Widely Used
 
+## Goal of the Best-Fit Line in Linear Regression
 
+The primary goal of the best-fit line in linear regression is to model the relationship between an independent variable (X) and a dependent variable (Y) in the most accurate and generalizable way.
+
+More specifically, the best-fit line aims to:
+
+**1. Minimize Prediction Error**
+
+The line is chosen such that it minimizes the overall error between actual values and predicted values.
+In standard linear regression, this is achieved using the least squares method, which minimizes the sum of squared residuals:
+
+Residual = Actual Y − Predicted Y
+
+Squaring ensures positive values and penalizes larger errors more heavily
+
+This results in a line that is statistically optimal for prediction under common assumptions.
+
+**2. Capture the Underlying Trend**
+
+The best-fit line represents the average trend in the data rather than fitting every point exactly.
+It helps distinguish signal (true relationship) from noise (random variation).
+
+**3. Enable Reliable Prediction**
+
+Once fitted, the line can be used to:
+
+Predict Y for new, unseen X values
+
+Estimate expected outcomes under different conditions
+
+This is critical in business, engineering, and scientific decision-making.
+
+**4. Quantify the Relationship Between Variables**
+
+The slope and intercept provide interpretable insights:
+
+Slope (β₁): How much Y changes for a one-unit change in X
+
+Intercept (β₀): Expected value of Y when X = 0
+
+These parameters allow stakeholders to understand direction, strength, and sensitivity of the relationship.
+
+**5. Support Statistical Inference**
+
+A best-fit line enables:
+
+Hypothesis testing (e.g., “Is X significantly related to Y?”)
+
+Confidence intervals for predictions
+
+Model evaluation metrics such as R² and RMSE
+
+In Simple Terms
+
+The best-fit line is the line that stays as close as possible to all data points on average, while remaining simple, interpretable, and predictive.
 
 
 
