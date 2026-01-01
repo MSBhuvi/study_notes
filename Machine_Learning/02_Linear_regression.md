@@ -21,7 +21,7 @@ As the size increases, the price increases — linear relationship.
   <img width="506" height="323" alt="Representing-Linear-Regression-Model" src="https://github.com/user-attachments/assets/a348c8b2-744a-4af3-be7d-ef10c5dfe599" />
 </p>
 
-## Type os Linear Regression
+## Type of Linear Regression
 <p align="center">
   <img width="614" height="329" alt="image" src="https://github.com/user-attachments/assets/23df0006-a216-4a4e-8369-14f18882dfd3" />
 </p>
@@ -95,7 +95,12 @@ In Simple Terms
 The best-fit line is the line that stays as close as possible to all data points on average, while remaining simple, interpretable, and predictive.
 
 
+## nbfieheoijoigowrg
 
+<p align="center">
+ <img width="1536" height="1024" alt="ChatGPT Image Jan 1, 2026, 07_58_32 AM" src="https://github.com/user-attachments/assets/31d55c7c-0938-4be3-b08b-24e6a79b6c28" />
+ <img width="479" height="267" alt="A-simulated-dataset-of-20-observations-from-a-multiple-linear-regression-consisting-of-3" src="https://github.com/user-attachments/assets/a43fc5d3-3ae5-419e-8521-7c3788aa5175" />
+</p>
 
 
 
