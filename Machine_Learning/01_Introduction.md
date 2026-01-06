@@ -4,6 +4,8 @@
 
 Machine learning is a branch of artificial intelligence that enables algorithms to uncover hidden patterns within datasets. It allows them to predict new, similar data without explicit programming for each task. Machine learning finds applications in diverse fields such as image and speech recognition, natural language processing, recommendation systems, fraud detection, portfolio optimization, and automating tasks.
 
+**Machine Learning is the science of teaching computes to learn patterns from data and improve automatically with expreience.**
+
 Machine Learning (ML) is a branch of artificial intelligence (AI) that allows computers to learn from data and make decisions or predictions without being explicitly programmed for every task.
 
 Machine learning = teaching a computer to learn patterns from data and use those patterns to make decisions.
