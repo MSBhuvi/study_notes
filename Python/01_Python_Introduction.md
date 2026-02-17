@@ -51,6 +51,22 @@ print("Python Comments Example")
 
 Python Comments Example
 
+### 3.Multiple Statements on a single line
+
+```
+x=5;y=10;z=x+y
+print(z)
+```
+
+### 4.Line Continuation
+
+```
+total=1+2+3+4+5+6+7+\
+4+5+6
+
+print(total)
+```
+
 ### why use comments?
 To **describe** what your code does
 
@@ -61,6 +77,22 @@ To **temporarily disable** lines of code
 To **improve readability** for others (and your future self)
 
 ---
+## 3. Indentation
+
+Indentation in Python is used to define the structure and hierarchy of the code. Unlike many other programming languages that use braces {} to delimit blocks of code, Python uses indentation to determine the grouping of statements. This means that all the statements within a block must be indented at the same level.
+
+Python uses indentation to define blocks of code. Consistent use of spaces (commonly 4) or a tab is required.
+
+
+```
+age=32
+if age>30:
+    
+    print(age)
+    
+print(age)
+```
+
 ## 3. Data Types
 In Python, data types tell the interpreter what kind of value a variable holds — like a number, text, list, etc.
 
