@@ -153,7 +153,7 @@ x = None
 Variables are **containers** for storing data **values.**
 
 A variable is a **name** used to store a **value** in memory.
-### Rules for Python variables
+### 4.1 Rules for Python variables
 A variable name must start with a letter or the underscore character
 
 A variable name cannot start with a number
@@ -171,6 +171,56 @@ A variable name cannot be any of the Python keywords.
 | 3️⃣ Can contain **letters, numbers, and underscores**               | ✅ `student_1`, `marks_count`    |
 | 4️⃣ Are **case-sensitive**                                          | `Age` and `age` are different   |
 | 5️⃣ Should not use **Python keywords**                              | ❌ `if`, `while`, `for`, `class` |
+
+### 4.2 Declaring And Assigning Variables
+
+```
+age=32
+height=6.1
+name="bhuvi"
+is_student=True
+
+## printing the variables
+
+print("age :",age)
+print("Height:",height)
+print("Name:",name)
+```
+
+### 4.3 Case Sensitivity
+
+In Python, case sensitive means that uppercase and lowercase letters are treated as different characters.
+
+```
+name="bhuvanesh"
+Name="bhuvaneshwaran"
+```
+### 4.4 Understnading Variable types
+
+Python is dynamically typed,type of a variable is determined at runtime
+
+```
+age=25 #int
+height=6.1 #float
+name="KRish" #str
+is_student=True #bool
+
+print(type(name))
+```
+### 4.5 Dynamic Typing
+
+Python allows the type of a vraible to change as the program executes
+
+```
+var=10 #int
+print(var,type(var))
+
+var="Hello"
+print(var,type(var))
+
+var=3.14
+print(var,type(var))
+```
 
 ---
 ## 5. Keywords in Python
