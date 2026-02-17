@@ -222,6 +222,24 @@ var=3.14
 print(var,type(var))
 ```
 
+### 4.6 Get value from Users
+
+```
+### Simple calculator
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+sum = num1 + num2
+difference = num1 - num2
+product = num1 * num2
+quotient = num1 / num2
+
+print("Sum:", sum)
+print("Difference:", difference)
+print("Product:", product)
+print("Quotient:", quotient)
+```
+
 ---
 ## 5. Keywords in Python
 🔹 Keywords are special reserved words in Python that have a specific meaning and purpose.
