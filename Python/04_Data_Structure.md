@@ -503,75 +503,291 @@ s.pop()       # removes a random element
 s.clear()     # removes all elements
 ```
 
-**Checking Membership**
+# Dictionary
 
-```
-s = {1, 2, 3}
-print(2 in s)   # True
-print(4 in s)   # False
-```
+## What is a Dictionary?
 
-### **Advantages of Sets**
+A **Dictionary** is a built-in Python data structure used to store data in **key–value pairs**.
 
-✅ 1. Fast Membership Testing
+Each value is accessed using a **unique key**.
 
-Checking x in set is O(1) on average.
+Example structure:
 
-✅ 2. No Duplicates
-
-Automatically removes duplicate values.
-
-✅ 3. Efficient Mathematical Operations
-
-Union, intersection, etc., are highly optimized.
-
-✅ 4. Good for Data Cleaning
-
-Easily remove duplicates from lists:
-
-```
-unique_list = list(set([1,2,2,3,3,4]))
+```python
+student = {
+    "name": "Siva",
+    "age": 22,
+    "course": "Python"
+}
 ```
 
-✅ 5. Mutable but Elements Must Be Hashable
+Here:
 
-Allows adding/removing items efficiently.
+- `name`, `age`, `course` → **keys**
+- `"Siva"`, `22`, `"Python"` → **values**
 
-### **Disadvantages of Sets**
+---
 
-❌ 1. Unordered
+# Characteristics of Dictionary
 
-You cannot rely on element positions; indexing is not supported.
+- Stored in **key : value format**
+- Uses **curly braces `{ }`**
+- **Keys must be unique**
+- **Values can repeat**
+- **Mutable (values can be changed)**
+- Provides **fast lookup**
 
-❌ 2. Cannot Store Unhashable Items
+Example:
 
-Lists, dicts, and sets cannot be stored.
+```python
+person = {"name": "Ravi", "age": 30}
+```
 
-❌ 3. No Duplicate Allowed
+---
 
-Sometimes you want duplicates (e.g., counting).
+# 5 Examples
 
-❌ 4. Random Element Removal with pop()
+---
 
-Not ideal for predictable removals.
+## 1. Student Information
 
-❌ 5. Not Suitable for Ordered Tasks
+### Example
 
-If you need order → use list
-If you need sorted order → use sorted(), list, or OrderedSet (3rd-party)
+```python
+student = {
+    "name": "Siva",
+    "age": 22,
+    "course": "Python"
+}
 
-### Summary Table
+print(student["name"])
+```
 
-| Feature            | Details                                                  |
-| ------------------ | -------------------------------------------------------- |
-| Ordered            | ❌ No                                                     |
-| Mutable            | ✔ Yes                                                    |
-| Duplicates Allowed | ❌ No                                                     |
-| Heterogeneous      | ✔ Yes                                                    |
-| Implementation     | Hash Table                                               |
-| Best Use Cases     | Membership testing, removing duplicates, math operations |
+### Output
 
+```
+Siva
+```
 
+### Explanation
+
+- `name` is the **key**
+- `"Siva"` is the **value**
+- We access the value using `student["name"]`
+
+Real-life usage: **Student database**
+
+---
+
+## 2. Product Details (E-commerce)
+
+### Example
+
+```python
+product = {
+    "product_name": "Laptop",
+    "price": 55000,
+    "brand": "Dell"
+}
+
+print(product["price"])
+```
+
+### Output
+
+```
+55000
+```
+
+### Explanation
+
+Dictionary stores **product details using keys**.  
+This structure is commonly used in **shopping websites**.
+
+---
+
+## 3. Marks of Students
+
+### Example
+
+```python
+marks = {
+    "math": 85,
+    "science": 90,
+    "english": 78
+}
+
+print(marks["science"])
+```
+
+### Output
+
+```
+90
+```
+
+### Explanation
+
+- Subject name = **key**
+- Marks = **value**
+
+Used in **result management systems**.
+
+---
+
+## 4. Phone Contact List
+
+### Example
+
+```python
+contacts = {
+    "Siva": 9876543210,
+    "Arun": 9123456780,
+    "Ravi": 9988776655
+}
+
+print(contacts["Arun"])
+```
+
+### Output
+
+```
+9123456780
+```
+
+### Explanation
+
+Dictionary acts like a **phonebook**.
+
+```
+Name → Phone Number
+```
+
+---
+
+## 5. Employee Data
+
+### Example
+
+```python
+employee = {
+    "id": 101,
+    "name": "Priya",
+    "salary": 45000
+}
+
+print(employee["salary"])
+```
+
+### Output
+
+```
+45000
+```
+
+### Explanation
+
+Used to store **employee records** in many applications.
+
+---
+
+# Updating a Dictionary
+
+```python
+student = {"name": "Siva", "age": 22}
+
+student["age"] = 23
+
+print(student)
+```
+
+Output
+
+```
+{'name': 'Siva', 'age': 23}
+```
+
+---
+
+# Adding New Data
+
+```python
+student["course"] = "Python"
+```
+
+Dictionary becomes
+
+```
+{'name': 'Siva', 'age': 23, 'course': 'Python'}
+```
+
+---
+
+# Removing Data
+
+```python
+student.pop("age")
+```
+
+---
+
+# Simple Real-Life Understanding
+
+Think of a **dictionary like an ID card system**.
+
+```
+ID → Person
+```
+
+Example:
+
+```
+101 → Siva
+102 → Arun
+103 → Ravi
+```
+
+Python version:
+
+```python
+people = {
+    101: "Siva",
+    102: "Arun",
+    103: "Ravi"
+}
+```
+
+---
+
+# Important Rule
+
+Dictionary **keys must be hashable**.
+
+Allowed keys:
+
+```
+string
+number
+tuple
+```
+
+Not allowed as keys:
+
+```
+list
+set
+dictionary
+```
+
+Example:
+
+```python
+data = {
+    (10,20): "Location A"
+}
+```
+
+Tuple works because it is **hashable**.
 
 
 
